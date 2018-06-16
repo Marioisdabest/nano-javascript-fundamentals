@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src='https://code.jquery.com/jquery-3.1.0.js'></script>
+     <script src='http://requirejs.org/docs/release/2.2.0/minified/require.js'></script>
+
+  </head>
+  <body>
+    <button>Hello
+    </button>
+    <script>
+    // var Mta = require('mta-gtfs');
+    // var mta = new Mta({
+    // key: 'f37c3e666bf9007a3d0a30c89a75212b', // only needed for mta.schedule() method
+    // feed_id: 1                  // optional, default = 1
+    // });
+    // mta.stop().then(function (result) {
+    //   console.log(result);
+    // }).catch(function (err) {
+    //   console.log(err);
+    // });
+
+
+    $("button").click(function(){
+  $.ajax({
+    url: "https://spiky-plane.glitch.me/",
+
+    success: function(result){
+      console.log(result);
+  }});
+});
+
+
+    </script>
+  </body>
+</html>
